@@ -1,15 +1,17 @@
 # Lernperiode-2
+
 ## Grobplanung
-RPG Charakter maker in den man seinen eigen charakter mit verschieden eigentschaften machen kann. Doch man kann dann auch ein Text datei haben mit schon informationen drin, die dann das programm liest und erkennt welche eigenschaften gewählt wurden (so eine art build), später möchte ich eine art game mit richtigen inputs machen.
+
+Einen Server Manager in z.B einem Spiel. In diesem Programm kann man einen Spielserver *simulieren und Informationen wie, wie viele spieler drauf sind, den status und statistiken von den Spielern. Ich will mit Textdateien die Informationen wie Server einstellung und Logs speichern und das Textdateien auch eingelesen werden können. 
 
 ## 16.10
-- [ ] Charakter erstellung mit namen
-- [ ] Eigenschaften hinzufügen die man als charakter haben kann.
+- [ ] Server Manager Menü erstellen
+- [ ] Funktion die einen Server Start simuliert und auch beenden können
 
-      Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich habe es dann geschafft. Dann habe ich ideen für mein Projekt gesucht und versucht etwas mit Text datei zu finden. Da bin ich dann zu dieser Idee gekommen.
+Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich habe es dann geschafft. Dann habe ich ideen für mein Projekt gesucht und versucht etwas mit Text datei zu finden. Da bin ich dann zu dieser Idee gekommen.
 
 ## 23.10
-- [ ] Text datei mit visual studio verbinden
-- [ ] Man kann seine einstellungen als build speicher (wird als text datei gespeichert)
-- [ ] Ein build hinzufügen können
-- [ ] Grundlage für das erste minigame
+- [ ] Textdatei mit Visual Studio verbinden und den Text daraus liest.
+- [ ] Informationen in einer Textdatei speichern.
+- [ ] Logs erstellen also echt Zeit informationen vom server
+- [ ] Eine Statistik anzeigen wie z.B wie viele spieler drauf sind oder wie lange der Server laüft.
