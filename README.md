@@ -6,8 +6,8 @@ Einen Server Manager in z.B einem Spiel. In diesem Programm kann man einen Spiel
 
 
 ## HA: 16.10
-- [ ] Server Manager Menü erstellen
-- [ ] Funktion die einen Server Start simuliert und auch beenden können
+- [x] Server Manager Menü erstellen
+- [x] Funktion die einen Server Start simuliert und auch beenden können
 
 Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich habe es dann geschafft. Dann habe ich ideen für mein Projekt gesucht und versucht etwas mit Text datei zu finden. Da bin ich dann zu dieser Idee gekommen.
 
