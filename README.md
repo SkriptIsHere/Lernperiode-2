@@ -4,6 +4,7 @@
 
 Einen Server Manager in z.B einem Spiel. In diesem Programm kann man einen Spielserver *simulieren und Informationen wie, wie viele spieler drauf sind, den status und statistiken von den Spielern. Ich will mit Textdateien die Informationen wie Server einstellung und Logs speichern und das Textdateien auch eingelesen werden können. 
 
+HA:
 ## 16.10
 - [ ] Server Manager Menü erstellen
 - [ ] Funktion die einen Server Start simuliert und auch beenden können
