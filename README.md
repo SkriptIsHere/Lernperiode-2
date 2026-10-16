@@ -1,5 +1,5 @@
 # Lernperiode-2
-Grobplanung
+## Grobplanung
 RPG Charakter maker in den man seinen eigen charakter mit verschieden eigentschaften machen kann. Doch man kann dann auch ein Text datei haben mit schon informationen drin, die dann das programm liest und erkennt welche eigenschaften gewählt wurden (so eine art build), später möchte ich eine art game mit richtigen inputs machen.
 
 16.10
