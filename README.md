@@ -12,7 +12,7 @@ Einen Server Manager in z.B einem Spiel. In diesem Programm kann man einen Spiel
 Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich habe es dann geschafft. Dann habe ich ideen für mein Projekt gesucht und versucht etwas mit Text datei zu finden. Da bin ich dann zu dieser Idee gekommen.
 
 ## 23.10
-- [ ] Textdatei mit Visual Studio verbinden und den Text daraus liest.
+- [x] Textdatei mit Visual Studio verbinden und den Text daraus liest.
 - [ ] Informationen in einer Textdatei speichern.
 - [ ] Logs erstellen also echt Zeit informationen vom server
 - [ ] Eine Statistik anzeigen wie z.B wie viele spieler drauf sind oder wie lange der Server laüft.
