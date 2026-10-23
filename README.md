@@ -13,6 +13,6 @@ Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich h
 
 ## 23.10
 - [x] Textdatei mit Visual Studio verbinden und den Text daraus liest.
-- [ ] Informationen in einer Textdatei speichern.
+- [x] Informationen in einer Textdatei speichern.
 - [ ] Logs erstellen also echt Zeit informationen vom server
 - [ ] Eine Statistik anzeigen wie z.B wie viele spieler drauf sind oder wie lange der Server läuft.
