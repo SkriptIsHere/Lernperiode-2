@@ -14,5 +14,17 @@ Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich h
 ## 23.10
 - [x] Textdatei mit Visual Studio verbinden und den Text daraus liest.
 - [x] Informationen in einer Textdatei speichern.
-- [ ] Logs erstellen also echt Zeit informationen vom server
-- [ ] Eine Statistik anzeigen wie z.B wie viele spieler drauf sind oder wie lange der Server läuft.
+- [x] Eine Statistik die anzeigt, wie viele spieler drauf sind.
+
+  ## HA:
+- [ ] Anzeigen wie überlastet der Server gerade ist.
+
+Heute habe ich herausgefunden wie man Text Dateien mit C# verbindet und auch geschafft die Werte durch die Text Datei zu verändern.
+
+
+## 30.10
+- [ ] Einen Timer programmieren, der Anzeigt wie lange der Server Online ist.
+- [ ] Live logs erstellen, also echt zeit Veränderungen sehen.
+- [ ] In der ServerInfo.Txt Einstellungen wie Server name, maximal Spieler anzahl einstellen können
+- [ ] Einen Security-Passwort bevor man Zugang zum Server Manager bekommt
+
