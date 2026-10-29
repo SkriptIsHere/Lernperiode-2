@@ -1,13 +1,15 @@
 ﻿using System;
+using System.Reflection.Metadata;
+using System.IO;
 
 class ServerManager
 {
     static bool onlineStatus = false;
-   
+
 
     static void Main()
     {
-
+        
         bool weiter = true;
 
         while (weiter == true)
@@ -49,7 +51,10 @@ class ServerManager
 
             if (eingabe.Key == ConsoleKey.D3)
             {
-                ServerStatus();
+                Console.Clear();
+                
+                PresetFile();
+                weiter = false;
 
             }
 
@@ -78,7 +83,7 @@ class ServerManager
         if (onlineStatus == false)
         {
             Console.Clear();
-         
+
             Text("Server wird gestartet...");
             onlineStatus = true;
         }
@@ -97,7 +102,7 @@ class ServerManager
         if (onlineStatus == true)
         {
             Console.Clear();
-         
+
             Text("Server wird beendet...");
             onlineStatus = false;
 
@@ -119,13 +124,43 @@ class ServerManager
 
         if (onlineStatus == true)
         {
-            Text("Server ist Online");
+
+            Console.WriteLine("Server ist Online");
         }
         else
         {
-            Text("Server ist Offline");
+            Console.WriteLine("Server ist Offline");
         }
 
         Console.ReadKey();
     }
+
+    static void PresetFile()
+    { 
+
+     
+     string[] zeilen = File.ReadAllLines("..\\..\\..\\ServerInfo.txt");
+
+     string spielerText = zeilen[0].Split('=')[1];
+
+        
+     int spielerCount = Convert.ToInt32(spielerText);
+
+     Console.SetCursorPosition(0, 1);
+     Console.WriteLine("Player Count: ");
+     Console.Write(spielerCount);
+
+        string serverLoadText = zeilen[2].Split('=')[1];
+
+
+        int systemOverload = Convert.ToInt32(serverLoadText);
+
+        Console.SetCursorPosition(0, 3);
+        Console.WriteLine("SystemOverload: ");
+        Console.Write(systemOverload);
+
+    }
+
+
 }
+
