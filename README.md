@@ -17,14 +17,14 @@ Heute habe ich ein Zahlen erraten spiel gemacht um zuschauen wo ich stehe, ich h
 - [x] Eine Statistik die anzeigt, wie viele spieler drauf sind.
 
   ## HA:
-- [ ] Anzeigen wie überlastet der Server gerade ist.
+- [X] Anzeigen wie überlastet der Server gerade ist.
 
 Heute habe ich herausgefunden wie man Text Dateien mit C# verbindet und auch geschafft die Werte durch die Text Datei zu verändern.
 
 
 ## 30.10
 - [ ] Einen Timer programmieren, der Anzeigt wie lange der Server Online ist.
-- [ ] Live logs erstellen, also echt zeit Veränderungen sehen.
+- [ ] Möglichkeit Textdateien zu importieren
 - [ ] In der ServerInfo.Txt Einstellungen wie Server name, maximal Spieler anzahl einstellen können
 - [ ] Einen Security-Passwort bevor man Zugang zum Server Manager bekommt
 
