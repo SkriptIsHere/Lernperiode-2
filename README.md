@@ -29,5 +29,5 @@ Heute habe ich herausgefunden wie man Text Dateien mit C# verbindet und auch ges
 <del>- [ ] Einen Security-Passwort bevor man Zugang zum Server Manager bekommt</del>
 
 Im Gespräch mit Herrn Colic habe ich entschieden ein neues Projekt zu starten. Dieses neue Projekt wird ein Monster inspector, indem man verschiedene Monster zur Auswahl hat und jeder verschieden Stats hat, die in einer Textdatei gespeichert sind. 
-- [ ] 
-- [ ] 
+- [ ] Das erste Monster erstellen
+- [ ] Werte vom Monster aus einer Textdatei lesen und in der Console ausgeben
