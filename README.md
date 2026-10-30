@@ -42,3 +42,5 @@ Heute habe ich ein neues Projekt gestartet, weil ich mein altes nicht so gut fan
 - [ ] Das Neue Monster im gleichen schema wie beim letzten verschiedene Stats geben
 - [ ] Die Möglichkeit Textdateien dort zu importieren und so ein Monster mit den stats von der text datei anzeigen.
 
+(Zusammenfassung der heutigen Sitzung)
+
