@@ -26,5 +26,7 @@ Heute habe ich herausgefunden wie man Text Dateien mit C# verbindet und auch ges
 - [ ] Einen Timer programmieren, der Anzeigt wie lange der Server Online ist.
 - [ ] Möglichkeit Textdateien zu importieren
 - [ ] In der ServerInfo.Txt Einstellungen wie Server name, maximal Spieler anzahl einstellen können
-- [ ] Einen Security-Passwort bevor man Zugang zum Server Manager bekommt
+<del>- [ ] Einen Security-Passwort bevor man Zugang zum Server Manager bekommt</del>
 
+Im Ge:
+- [ ]
