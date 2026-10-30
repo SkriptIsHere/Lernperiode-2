@@ -24,9 +24,10 @@ Heute habe ich herausgefunden wie man Text Dateien mit C# verbindet und auch ges
 
 ## 30.10
 <del>-- [ ] Einen Timer programmieren, der Anzeigt wie lange der Server Online ist.
-- [ ] Möglichkeit Textdateien zu importieren
-- [ ] In der ServerInfo.Txt Einstellungen wie Server name, maximal Spieler anzahl einstellen können
+<del>-- [ ] Möglichkeit Textdateien zu importieren
+<del>-- [ ] In der ServerInfo.Txt Einstellungen wie Server name, maximal Spieler anzahl einstellen können
 <del>- [ ] Einen Security-Passwort bevor man Zugang zum Server Manager bekommt</del>
 
-Im Ge:
-- [ ]
+Im Gespräch mit Herrn Colic habe ich entschieden ein neues Projekt zu starten. Dieses neue Projekt wird ein Monster inspector, indem man verschiedene Monster zur Auswahl hat und jeder verschieden Stats hat, die in einer Textdatei gespeichert sind. 
+- [ ] 
+- [ ] 
