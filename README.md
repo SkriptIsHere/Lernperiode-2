@@ -31,3 +31,14 @@ Heute habe ich herausgefunden wie man Text Dateien mit C# verbindet und auch ges
 Im Gespräch mit Herrn Colic habe ich entschieden ein neues Projekt zu starten. Dieses neue Projekt wird ein Monster inspector, indem man verschiedene Monster zur Auswahl hat und jeder verschieden Stats hat, die in einer Textdatei gespeichert sind. 
 - [ ] Das erste Monster erstellen
 - [ ] Werte vom Monster aus einer Textdatei lesen und in der Console ausgeben
+
+Heute habe ich ein neues Projekt gestartet, weil ich mein altes nicht so gut fande und es keinen richtigen nutzen hatte. Jetzt mache ich einen Monster-Inspector in den man Monster auswählen kann und ihre stats dann sieht, diese stats sind in einer textdatei gespeichert.
+
+
+## 06.11
+- [ ] Die werte von der Textdatei spliten (werte nach "=")
+- [ ] Die werte dann in int wenn sie zahlen sind und in string wenn sie Wörter sind umwandeln um sie dann später zu nutzen.
+- [ ] Neues Monster hinzufügen
+- [ ] Das Neue Monster im gleichen schema wie beim letzten verschiedene Stats geben
+- [ ] Die Möglichkeit Textdateien dort zu importieren und so ein Monster mit den stats von der text datei anzeigen.
+
