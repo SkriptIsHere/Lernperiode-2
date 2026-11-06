@@ -40,7 +40,7 @@ Heute habe ich ein neues Projekt gestartet, weil ich mein altes nicht so gut fan
 - [x] Die werte dann in int wenn sie zahlen sind und in string wenn sie Wörter sind umwandeln um sie dann später zu nutzen.
 - [x] Neues Monster hinzufügen
 - [x] Das Neue Monster im gleichen schema wie beim letzten verschiedene Stats geben
-- [ ] Die Möglichkeit Textdateien dort zu importieren und so ein Monster mit den stats von der text datei anzeigen.
+- [x] Die Möglichkeit Textdateien dort zu importieren und so ein Monster mit den stats von der text datei anzeigen.
 
-(Zusammenfassung der heutigen Sitzung)
+Heute habe ich gelernt wie man bestimmte texte splittet und sie dann in string oder int umwandelt. Dann habe ich noch ein neues Monster erstellt und alles in eine funktion gemacht, damit man nicht für jedes Monster eigene funktion braucht. Als letztes habe ich mit hilfe geschafft zu ermöglichen das so ein Windows datei screen kommt wo man dann seine datei importieren kann (in dem fall eine .txt) und falls man die txt nach der struktur geschrieben hat sollte sie richtig angezeigt werden.
 
