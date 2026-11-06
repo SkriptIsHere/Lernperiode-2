@@ -36,8 +36,8 @@ Heute habe ich ein neues Projekt gestartet, weil ich mein altes nicht so gut fan
 
 
 ## 06.11
-- [ ] Die werte von der Textdatei spliten (werte nach "=")
-- [ ] Die werte dann in int wenn sie zahlen sind und in string wenn sie Wörter sind umwandeln um sie dann später zu nutzen.
+- [x] Die werte von der Textdatei spliten (werte nach "=")
+- [x] Die werte dann in int wenn sie zahlen sind und in string wenn sie Wörter sind umwandeln um sie dann später zu nutzen.
 - [ ] Neues Monster hinzufügen
 - [ ] Das Neue Monster im gleichen schema wie beim letzten verschiedene Stats geben
 - [ ] Die Möglichkeit Textdateien dort zu importieren und so ein Monster mit den stats von der text datei anzeigen.
