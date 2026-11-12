@@ -44,3 +44,6 @@ Heute habe ich ein neues Projekt gestartet, weil ich mein altes nicht so gut fan
 
 Heute habe ich gelernt wie man bestimmte texte splittet und sie dann in string oder int umwandelt. Dann habe ich noch ein neues Monster erstellt und alles in eine funktion gemacht, damit man nicht für jedes Monster eigene funktion braucht. Als letztes habe ich mit hilfe geschafft zu ermöglichen das so ein Windows datei screen kommt wo man dann seine datei importieren kann (in dem fall eine .txt) und falls man die txt nach der struktur geschrieben hat sollte sie richtig angezeigt werden.
 
+
+## 13.11
+- [] 
