@@ -50,4 +50,16 @@ Heute habe ich gelernt wie man bestimmte texte splittet und sie dann in string o
 - [x] Die Möglichkeit wieder ins Hauptmenu zurück zukommen und es besser gestalten.
 - [x] Neue Monster eigenschaften hinzufügen (wie Defense, Speed, usw.)
 - [x] Maximale Powerlevel anhand der Stats berechnen und anschliessend eine Rarität geben.
+HA:
+- [ ] Vergleich System, bei den man zwei Monster auswählen kann und sie durch ihre Powerlevel vergleiche kann.
+
+Heute habe ich als erstes eine If-funktion gemacht damit man nachdem man die Stats von einen Monster angeschaut hat wieder ins Menu kommt. Anschliessend habe ich mein code sauber gemacht und Menu bisschen verschönert. Dann habe ich neue Monster Eigenschaften hinzufügt aber diesmal es mit Case gemacht, was ich neu gelernt habe. Powerlevel wird berechnet anhand der Stats, manche stats bringen mehr und machen weniger. Mit Powerlevel konnte ich dann auch bestimmen welche Rarität ein Monster hat anhand der Powerlevel. Am ende habe ich noch geaddet das eine fehler Meldung kommt wenn man eine ungültige datei importiert.
+
+
+## 20.11
+- [ ] Eine neue funktion bei der man ein eigenes Monster erstellen kann (name, alter, stärke, usw.)
+- [ ] Erstelles Monster als .txt datei speichern
+- [ ] Eine Monster libary bei der du alle Monster siehst die du erstellt hast
+HA:
+- [ ] Bei der Libary die Monster anschauen also auch die Stats
   
