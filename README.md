@@ -46,7 +46,7 @@ Heute habe ich gelernt wie man bestimmte texte splittet und sie dann in string o
 
 
 ## 13.11
-- [ ] Bei einer fehlerhaften Datei, eine fehlermeldung anzeigen anstatt abzustürzen (mit try und catch)
+- [x] Bei einer fehlerhaften Datei, eine fehlermeldung anzeigen anstatt abzustürzen (mit try und catch)
 - [x] Die Möglichkeit wieder ins Hauptmenu zurück zukommen und es besser gestalten.
 - [x] Neue Monster eigenschaften hinzufügen (wie Defense, Speed, usw.)
 - [x] Maximale Powerlevel anhand der Stats berechnen und anschliessend eine Rarität geben.
