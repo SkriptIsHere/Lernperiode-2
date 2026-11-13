@@ -50,6 +50,7 @@ Heute habe ich gelernt wie man bestimmte texte splittet und sie dann in string o
 - [x] Die Möglichkeit wieder ins Hauptmenu zurück zukommen und es besser gestalten.
 - [x] Neue Monster eigenschaften hinzufügen (wie Defense, Speed, usw.)
 - [x] Maximale Powerlevel anhand der Stats berechnen und anschliessend eine Rarität geben.
+      
 HA:
 - [ ] Vergleich System, bei den man zwei Monster auswählen kann und sie durch ihre Powerlevel vergleiche kann.
 
