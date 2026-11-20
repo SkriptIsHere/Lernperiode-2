@@ -61,6 +61,7 @@ Heute habe ich als erstes eine If-funktion gemacht damit man nachdem man die Sta
 - [ ] Eine neue funktion bei der man ein eigenes Monster erstellen kann (name, alter, stärke, usw.)
 - [ ] Erstelles Monster als .txt datei speichern
 - [ ] Eine Monster libary bei der du alle Monster siehst die du erstellt hast
+      
 HA:
 - [ ] Bei der Libary die Monster anschauen also auch die Stats
   
