@@ -68,7 +68,7 @@ HA:
 In der Heutigen Sitzung habe ich die Funktion im Programm gemacht, dass man eigene Monster im Program drinne erstellen kann und sie auch als .txt Datei auf seinen PC speichern kann. Am ende habe ich noch eine Libary gemacht wo alle Monster die man erstellt hat drinne stehen, doch ich bin noch nicht sehr zufrieden und werde es noch überarbeiten.
 
 ## 27.11
-- [ ] Vergleichsystem, also 2 Monster miteinander vergleichen und am ende sagen wer gewinnen würde (der mit mehr Powerlevel)
+- [ ] Vergleichsystem, also 2 Monster miteinander vergleichen und am ende sagen wer gewinnen würde (derjenige mit mehr Powerlevel)
 - [ ] Dungeonsystem, also erstmals dann man ein erstellen monster auswählen kann um in ein dungeon zu starten.
 - [ ] Dungeon erweitern, indem feindliche gegner auftauchen und dich angreifen (turn based rpg)
 
