@@ -58,7 +58,7 @@ Heute habe ich als erstes eine If-funktion gemacht damit man nachdem man die Sta
 
 
 ## 20.11
-- [ ] Eine neue funktion bei der man ein eigenes Monster erstellen kann (name, alter, stärke, usw.)
+- [x] Eine neue funktion bei der man ein eigenes Monster erstellen kann (name, alter, stärke, usw.)
 - [ ] Erstelles Monster als .txt datei speichern
 - [ ] Eine Monster libary bei der du alle Monster siehst die du erstellt hast
       
