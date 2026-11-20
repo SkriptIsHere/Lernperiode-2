@@ -72,5 +72,6 @@ In der Heutigen Sitzung habe ich die Funktion im Programm gemacht, dass man eige
 - [ ] Dungeonsystem, also erstmals dann man ein erstellen monster auswählen kann um in ein dungeon zu starten.
 - [ ] Dungeon erweitern, indem feindliche gegner auftauchen und dich angreifen (turn based rpg)
 
+HA:
 - [ ] Nach einen Level eine Belohung bekommen (z.B + 5 Health Item)
   
