@@ -60,8 +60,17 @@ Heute habe ich als erstes eine If-funktion gemacht damit man nachdem man die Sta
 ## 20.11
 - [x] Eine neue funktion bei der man ein eigenes Monster erstellen kann (name, alter, stärke, usw.)
 - [x] Erstelles Monster als .txt datei speichern
-- [ ] Eine Monster libary bei der du alle Monster siehst die du erstellt hast
+- [x] Eine Monster libary bei der du alle Monster siehst die du erstellt hast
       
 HA:
 - [ ] Bei der Libary die Monster anschauen also auch die Stats
+
+In der Heutigen Sitzung habe ich die Funktion im Programm gemacht, dass man eigene Monster im Program drinne erstellen kann und sie auch als .txt Datei auf seinen PC speichern kann. Am ende habe ich noch eine Libary gemacht wo alle Monster die man erstellt hat drinne stehen, doch ich bin noch nicht sehr zufrieden und werde es noch überarbeiten.
+
+## 27.11
+- [ ] Vergleichsystem, also 2 Monster miteinander vergleichen und am ende sagen wer gewinnen würde (der mit mehr Powerlevel)
+- [ ] Dungeonsystem, also erstmals dann man ein erstellen monster auswählen kann um in ein dungeon zu starten.
+- [ ] Dungeon erweitern, indem feindliche gegner auftauchen und dich angreifen (turn based rpg)
+
+- [ ] Nach einen Level eine Belohung bekommen (z.B + 5 Health Item)
   
