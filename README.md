@@ -63,7 +63,7 @@ Heute habe ich als erstes eine If-funktion gemacht damit man nachdem man die Sta
 - [x] Eine Monster libary bei der du alle Monster siehst die du erstellt hast
       
 HA:
-- [ ] Bei der Libary die Monster anschauen also auch die Stats
+- [x] Bei der Libary die Monster anschauen also auch die Stats
 
 In der Heutigen Sitzung habe ich die Funktion im Programm gemacht, dass man eigene Monster im Program drinne erstellen kann und sie auch als .txt Datei auf seinen PC speichern kann. Am ende habe ich noch eine Libary gemacht wo alle Monster die man erstellt hat drinne stehen, doch ich bin noch nicht sehr zufrieden und werde es noch überarbeiten.
 
