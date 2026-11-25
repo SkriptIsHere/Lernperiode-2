@@ -1,7 +1,8 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.IO;
 using System.Windows.Forms;
+using System.Linq;
 class Monster_Inspector
 {
 
@@ -144,19 +145,17 @@ class Monster_Inspector
 
     static void AddToMonsterList(string filePath)
     {
-        if (!File.Exists(monsterListPath))
-            File.WriteAllText(monsterListPath, "");
 
-        string[] existing = File.ReadAllLines(monsterListPath);
+            if (!File.Exists(monsterListPath))
+                File.Create(monsterListPath).Close();
 
+            string[] existing = File.ReadAllLines(monsterListPath);
+
+            if (!existing.Contains(filePath))
+            {
+                File.AppendAllText(monsterListPath, filePath + Environment.NewLine);
+            }
         
-        foreach (string line in existing)
-        {
-            if (line.Trim() == filePath)
-                return;
-        }
-
-        File.AppendAllText(monsterListPath, filePath + Environment.NewLine);
 
     }
 
@@ -164,7 +163,7 @@ class Monster_Inspector
     {
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("=== My Monsters ===");
+        Console.WriteLine("--- My Monsters ---");
         Console.ResetColor();
         Console.WriteLine();
 
@@ -238,7 +237,15 @@ class Monster_Inspector
         if (!File.Exists(monsterListPath))
             return new string[0];
 
-        return File.ReadAllLines(monsterListPath);
+        string[] paths = File.ReadAllLines(monsterListPath);
+
+        string[] existingPaths = paths
+            .Where(path => File.Exists(path))
+            .ToArray();
+
+        File.WriteAllLines(monsterListPath, existingPaths);
+
+        return existingPaths;
     }
 
     static void LoadMonster(string filePath)
