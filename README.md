@@ -69,9 +69,18 @@ In der Heutigen Sitzung habe ich die Funktion im Programm gemacht, dass man eige
 
 ## 27.11
 - [x] Eine neue Funktion bei der man in ein Menu kommt wo die erstellen Monster steht und man 2 auswählen kann (sie werden dann grün)
-- [ ] Wenn zwei gewählt wurden dann kann man Start machen und es werden beide gemessen.
+- [x] Wenn zwei gewählt wurden dann kann man Start machen und es werden beide gemessen.
 
+Ich habe heute etwas neues gemacht also jetzt bei meinem Projekt so ein Kampf System zwischen zwei Monster, was gerade sehr simple gehalten ist, indem sie auf Lowerlevel schaut und dann sagt wer gewinnen würde.
 
 HA:
 - [ ] Dungeon mode, zuerst ein Menu bei den man seinen Maincharakter wählen kann
 - [ ] Neue variablen speziell für dungeon mode (Gold, exp) und sie auch in ein Shop nutzen
+
+
+## 04.12
+- [ ] Feinde erstellen die selber feste stats haben aber nicht so wie die Monster sind die, die Spieler erstellt haben sondern schon in Programm
+- [ ] Fight gegen Feinde machen, das man wirklich HP verliert und man selber schaden machen kann
+- [ ] Den richtigen run programmieren, dass man ein run starten kann und dann Feinde auftauchen (in weitere räume gehen wird später gemacht).
+
+
