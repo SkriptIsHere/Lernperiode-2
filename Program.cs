@@ -15,7 +15,7 @@ class Monster_Inspector
     static int wisdom = 0;
 
 
-    [STAThread]
+    [STAThread] // Damit Windows Forms funktioniert
 
 
     static void Main()
@@ -33,6 +33,7 @@ class Monster_Inspector
         Console.WriteLine("Press 3 to choose Create Monster");
         Console.WriteLine("Press Space to import your own Monster");
         Console.WriteLine("Press L to view your creations");
+        Console.WriteLine("Press F to Fight with your Monsters");
 
         Console.ResetColor();
 
@@ -65,6 +66,11 @@ class Monster_Inspector
                 }
             }
 
+        }
+        else if (Input.Key == ConsoleKey.F)
+        {
+            Console.Clear();
+            MonsterBattle();
         }
 
         Console.ReadKey();
@@ -127,7 +133,7 @@ class Monster_Inspector
                     AddToMonsterList(saveFileDialog.FileName);
                 }
                 catch (Exception ex) { }
-                
+
 
 
             }
@@ -140,112 +146,6 @@ class Monster_Inspector
 
 
 
-    }
-    static string monsterListPath = "..\\..\\..\\MonsterList.txt";
-
-    static void AddToMonsterList(string filePath)
-    {
-
-            if (!File.Exists(monsterListPath))
-                File.Create(monsterListPath).Close();
-
-            string[] existing = File.ReadAllLines(monsterListPath);
-
-            if (!existing.Contains(filePath))
-            {
-                File.AppendAllText(monsterListPath, filePath + Environment.NewLine);
-            }
-        
-
-    }
-
-    static void MonsterList()
-    {
-        Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.WriteLine("--- My Monsters ---");
-        Console.ResetColor();
-        Console.WriteLine();
-
-        string[] paths = GetMonsterList();
-
-        if (paths.Length == 0)
-        {
-            Console.WriteLine("(no monsters created yet)");
-            Console.WriteLine();
-            Console.WriteLine("Press any key...");
-            Console.ReadKey();
-            Console.Clear();
-            Main();
-            return;
-        }
-
-       
-        for (int i = 0; i < paths.Length; i++)
-        {
-            
-            Console.WriteLine("[" + (i + 1) + "] " + Path.GetFileName(paths[i]));
-        }
-
-        Console.WriteLine();
-        Console.WriteLine("Enter number to inspect (0 = back): ");
-
-        string input = Console.ReadLine();
-        int choice;
-        if (!int.TryParse(input, out choice))
-        {
-            Console.Clear();
-            Main();
-            return;
-        }
-
-        if (choice == 0)
-        {
-            Console.Clear();
-            Main();
-            return;
-        }
-
-        if (choice >= 1 && choice <= paths.Length)
-        {
-            
-            string selectedPath = paths[choice - 1];
-            LoadMonster(selectedPath);
-
-            Console.Clear();
-            Console.WriteLine("His stats are: ");
-            Console.WriteLine();
-            
-
-            Console.WriteLine();
-            Console.WriteLine("Press any key...");
-            Console.ReadKey();
-        }
-        else
-        {
-            Console.WriteLine("Invalid number.");
-            Console.ReadKey();
-        }
-
-        Console.Clear();
-        Main();
-
-    }
-
-    static string[] GetMonsterList()
-    {
-        if (!File.Exists(monsterListPath))
-            return new string[0];
-
-        string[] paths = File.ReadAllLines(monsterListPath);
-
-        string[] existingPaths = paths
-            .Where(path => File.Exists(path))
-            .ToArray();
-
-        File.WriteAllLines(monsterListPath, existingPaths);
-
-        return existingPaths;
     }
 
     static void LoadMonster(string filePath)
@@ -330,7 +230,7 @@ class Monster_Inspector
             string rarity = "";
 
             if (powerLevel > 5000)
-        
+
                 rarity = "immortal (Highest rarity)";
             else if (powerLevel > 2500)
                 rarity = "godly";
@@ -406,6 +306,115 @@ class Monster_Inspector
         }
     }
 
+
+    // MonsterList
+    static string monsterListPath = "..\\..\\..\\MonsterList.txt";
+
+    static void AddToMonsterList(string filePath)
+    {
+
+        if (!File.Exists(monsterListPath))
+            File.Create(monsterListPath).Close();
+
+        string[] existing = File.ReadAllLines(monsterListPath);
+
+        if (!existing.Contains(filePath))
+        {
+            File.AppendAllText(monsterListPath, filePath + Environment.NewLine);
+        }
+
+
+    }
+
+    static void MonsterList()
+    {
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("--- My Monsters ---");
+        Console.ResetColor();
+        Console.WriteLine();
+
+        string[] paths = GetMonsterList();
+
+        if (paths.Length == 0)
+        {
+            Console.WriteLine("(no monsters created yet)");
+            Console.WriteLine();
+            Console.WriteLine("Press any key...");
+            Console.ReadKey();
+            Console.Clear();
+            Main();
+            return;
+        }
+
+
+        for (int i = 0; i < paths.Length; i++)
+        {
+
+            Console.WriteLine("[" + (i + 1) + "] " + Path.GetFileName(paths[i]));
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("Enter number to inspect");
+
+        string input = Console.ReadLine();
+        int choice;
+        if (!int.TryParse(input, out choice))
+        {
+            Console.Clear();
+            Main();
+            return;
+        }
+
+        if (choice == 0)
+        {
+            Console.Clear();
+            Main();
+            return;
+        }
+
+        if (choice >= 1 && choice <= paths.Length)
+        {
+
+            string selectedPath = paths[choice - 1];
+            LoadMonster(selectedPath);
+
+            Console.Clear();
+            Console.WriteLine("His stats are: ");
+            Console.WriteLine();
+
+
+            Console.WriteLine();
+            Console.WriteLine("Press any key...");
+            Console.ReadKey();
+        }
+        else
+        {
+            Console.WriteLine("Invalid number.");
+            Console.ReadKey();
+        }
+
+        Console.Clear();
+        Main();
+
+    }
+
+    static string[] GetMonsterList()
+    {
+        if (!File.Exists(monsterListPath))
+            return new string[0];
+
+        string[] paths = File.ReadAllLines(monsterListPath);
+
+        string[] existingPaths = paths
+            .Where(path => File.Exists(path))
+            .ToArray();
+
+        File.WriteAllLines(monsterListPath, existingPaths);
+
+        return existingPaths;
+    }
+
     static string ReadString(string prompt)
     {
         while (true)
@@ -413,7 +422,7 @@ class Monster_Inspector
             Console.Write(prompt);
             string input = Console.ReadLine();
             if (!string.IsNullOrWhiteSpace(input))
-            return input.Trim();
+                return input.Trim();
 
         }
     }
@@ -425,11 +434,185 @@ class Monster_Inspector
             Console.Write(prompt);
             string input = Console.ReadLine();
             if (int.TryParse(input, out int value) && value > 0)
-            return value;
+                return value;
 
 
 
         }
+    }
+    //
+
+
+
+
+    // MonsterBattle
+    // MonsterBattle
+    static void MonsterBattle()
+    {
+        string[] paths = GetMonsterList();
+
+        if (paths.Length < 2)
+        {
+            Console.WriteLine("You need at least 2 Monsters!");
+            Console.ReadKey();
+            Console.Clear();
+            Main();
+            return;
+        }
+
+        int firstMonster = -1;
+        int secondMonster = -1;
+
+        while (true)
+        {
+            Console.WriteLine("--- Choose your 2 Monsters to Fight ---");
+            Console.WriteLine();
+
+            for (int i = 0; i < paths.Length; i++)
+            {
+                if (i == firstMonster || i == secondMonster)
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine($"[{i + 1}] {Path.GetFileName(paths[i])}");
+                Console.ResetColor();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Enter to Start Fight");
+            Console.WriteLine("ESC to go back");
+
+            ConsoleKeyInfo key = Console.ReadKey(true);
+
+            if (key.Key == ConsoleKey.Escape)
+            {
+                Console.Clear();
+                Main();
+                return;
+            }
+
+            if (key.Key == ConsoleKey.Enter)
+            {
+                if (firstMonster != -1 && secondMonster != -1)
+                    break;
+            }
+
+            if (int.TryParse(key.KeyChar.ToString(), out int choice))
+            {
+                int index = choice - 1;
+
+                if (index >= 0 && index < paths.Length)
+                {
+                    if (index == firstMonster)
+                        firstMonster = -1;
+
+                    else if (index == secondMonster)
+                        secondMonster = -1;
+
+                    else if (firstMonster == -1)
+                        firstMonster = index;
+
+                    else if (secondMonster == -1)
+                        secondMonster = index;
+                }
+            }
+
+            Console.Clear();
+        }
+
+        // FIGHT RESULT
+
+        Console.Clear();
+
+        int power1 = GetPowerLevel(paths[firstMonster]);
+        int power2 = GetPowerLevel(paths[secondMonster]);
+
+        Console.WriteLine("========== FIGHT RESULT ==========");
+        Console.WriteLine();
+
+        Console.WriteLine(Path.GetFileName(paths[firstMonster]));
+        Console.WriteLine("PowerLevel: " + power1);
+
+        Console.WriteLine();
+
+        Console.WriteLine(Path.GetFileName(paths[secondMonster]));
+        Console.WriteLine("PowerLevel: " + power2);
+
+        Console.WriteLine();
+
+        if (power1 > power2)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(Path.GetFileName(paths[firstMonster]) + " WINS!");
+        }
+        else if (power2 > power1)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(Path.GetFileName(paths[secondMonster]) + " WINS!");
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("DRAW!");
+        }
+
+        Console.ResetColor();
+
+        Console.WriteLine();
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+
+        Console.Clear();
+        Main();
+    }
+
+
+    // Get PowerLevel
+    static int GetPowerLevel(string filePath)
+    {
+        string[] lines = File.ReadAllLines(filePath);
+
+        int health = 0;
+        int strength = 0;
+        int dexterity = 0;
+        int intelligence = 0;
+        int wisdom = 0;
+
+        foreach (string line in lines)
+        {
+            if (!line.Contains("="))
+                continue;
+
+            string[] parts = line.Split('=');
+
+            string desc = parts[0].Trim();
+            string value = parts[1].Trim();
+
+            switch (desc)
+            {
+                case "health":
+                    health = int.Parse(value);
+                    break;
+
+                case "strength":
+                    strength = int.Parse(value);
+                    break;
+
+                case "dexterity":
+                    dexterity = int.Parse(value);
+                    break;
+
+                case "intelligence":
+                    intelligence = int.Parse(value);
+                    break;
+
+                case "wisdom":
+                    wisdom = int.Parse(value);
+                    break;
+            }
+        }
+
+        return health / 2 + strength * 2
+            + dexterity + intelligence + wisdom / 2;
     }
 }
 
